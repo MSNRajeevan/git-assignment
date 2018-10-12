@@ -1,0 +1,14 @@
+<div>
+    <table width="80%" border="1">
+        <th>ID</th>
+        <th>NAME</th>
+        <th>EMAIL</th>
+        <th>DEPT</th>
+        <tr *ngFor="let employee of dummy_employees">
+            <td>{{employee.id}}</td>
+            <td>{{employee.name}}</td>
+            <td>{{employee.email}}</td>
+            <td>{{employee.dept}}</td>
+        </tr>
+      </table>
+</div>

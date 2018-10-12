@@ -1,0 +1,13 @@
+<div>
+
+  <!--
+    <input type="button" value="Click" (click)="fun()" />
+    Component to add new record
+  $event : inbuilt variable/object that refers to data pushed/emitted/Output by event
+  -->
+
+  <app-emp-entrychild (dataentry)="addNewRecord($event)"></app-emp-entrychild>
+
+  <!--Component to show list-->
+    <app-emp-showchild [dummy_employees]="employees" ></app-emp-showchild>
+</div>

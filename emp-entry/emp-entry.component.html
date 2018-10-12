@@ -1,0 +1,20 @@
+<div>
+    <h2>Provide details of new Employee</h2>
+    <!-- create alaises of ech input tag
+        alloted a variable name to input tags
+    -->
+    <form>
+  
+      <pre>
+        Enter Employee Code         <input type="text" name="id" #id />
+        Enter Employee Name         <input type="text" name="name" #n />
+        Enter Employee Email        <input type="text" name="email" #e />
+        Enter Employee Dept         <input type="text" name="dept" #d />
+  
+                                    <input type="button" value="Save" (click)="save(id,n,e,d)" />
+      </pre>
+    </form>
+
+    <!-- where list is supposed to be shown-->
+    <app-emp-show [dummy_employees]="employees" ></app-emp-show>
+</div>
